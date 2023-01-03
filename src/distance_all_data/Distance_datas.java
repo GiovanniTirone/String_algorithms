@@ -1,6 +1,6 @@
-package distance_2;
+package distance_all_data;
 
-public class All_data {
+public class Distance_datas {
 
     private int distance_matrix [][];
 
@@ -8,10 +8,13 @@ public class All_data {
 
     private String sub_problems_matrix [][];
 
-    public All_data (int distance_matrix [][] , String operations_matrix [][], String sub_problems_matrix [][] ){
+  //  private String paths_matrix [][];
+
+    public Distance_datas(int distance_matrix [][] , String operations_matrix [][], String sub_problems_matrix [][]){
         this.distance_matrix = distance_matrix;
         this.operations_matrix = operations_matrix;
         this.sub_problems_matrix = sub_problems_matrix;
+     //   this.paths_matrix = paths_matrix;
     }
 
     public int[][] getDistance_matrix() {
@@ -25,4 +28,8 @@ public class All_data {
     public String[][] getSub_problems_matrix() {
         return sub_problems_matrix;
     }
+
+  //  public String [][] getPaths_matrix() {
+ //      return paths_matrix;
+ //   }
 }
