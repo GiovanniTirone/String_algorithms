@@ -3,7 +3,7 @@ package string_matching;
 import utility.Utility;
 
 
-public class String_matching_2 {
+public class String_matching_automaton {
 
     private String pattern ;
 
@@ -13,7 +13,7 @@ public class String_matching_2 {
 
     private String [] status;
 
-    public String_matching_2(String pattern, char [] alphabet) {
+    public String_matching_automaton(String pattern, char [] alphabet) {
         this.pattern =  "#" + pattern;
         this.pat_ar = this.pattern.toCharArray();
         this.alphabet = alphabet;
@@ -81,7 +81,7 @@ public class String_matching_2 {
     public static void main(String[] args) {
         String pattern = "raro";
         char [] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-        String_matching_2 string_matching = new String_matching_2(pattern,alphabet);
+        String_matching_automaton string_matching = new String_matching_automaton(pattern,alphabet);
         Data data = string_matching.buildAutomaton();
         System.out.println(Utility.formatIntMatrix(data.evolutionMat_int));
         System.out.println(Utility.formatStringMatrix(data.evolutionMat_string));

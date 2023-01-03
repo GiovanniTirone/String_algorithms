@@ -1,6 +1,5 @@
 package max_common_subseq;
 
-import utility.Utility;
 
 import static utility.Utility.formatIntMatrix;
 import static utility.Utility.formatStringMatrix;
